@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
   print(db['foo'])
+  print('ack')
   # matches = db.prefix("prefix")print(db['foo'])
   # db['foo'] = 10
   return render_template('index.html')
